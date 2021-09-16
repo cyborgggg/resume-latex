@@ -1,0 +1,219 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeProjectItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeProjectSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    {\Huge \scshape Nooruddin Shaikh}
+\end{center}
+
+\begin {tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \text{Andheri West, Mumbai, MH, 400058} & Mobile: +91 88791 14831\\
+  \text{\href{mailto:nooruddin12401@gmail.com}{\faEnvelope\hspace{2 mm}\color{blue}nooruddin12401@gmail.com}} & \href{https://github.com/noor12401}{\faGithub\hspace{2 mm}\color{blue}github.com/noor12401}\\
+  \href{https://www.linkedin.com/in/nooruddin-shaikh/}{\faLinkedin\hspace{2 mm}\color{blue}linkedin.com/in/nooruddin-shaikh} & {\href{https://noor12401.medium.com/}{\faMedium\hspace{2 mm}\color{blue}noor12401.medium.com}}
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {\href{https://s3.ap-south-1.amazonaws.com/internship.ineuron.ai/certificates/31e40962-e2d6-41a0-ae05-ffaca1e58b52.pdf}{\color{blue}Ineuron.ai}}{}
+      {Machine Learning Intern}{Aug 2021 - Sep 2021}
+      \resumeItemListStart
+      \item Applied statistical analysis, deep learning and machine learning methods to large data sets for data exploration, feature engineering, bias correction and prediction.
+      \item Evaluated and analyzed the data set to achieve the highest accuracy for the model.
+      \item Maintained \textbf{High Level Document, Low Level Document, WireFrame and Report}.
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+  
+
+ %-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://www.mhssce.ac.in/}{\color{blue}M H Saboo Siddik College of Enginnering}}{Mumbai, MH, IN}
+      {Bachelor of Engineering in Electronics and Telecommunication;  CGPA: 7.70/10}{Aug 2018 - May 2022}
+    \resumeSubheading
+      {\href{https://bhavans.ac.in/}{\color{blue}Bhavans College}}{Mumbai, MH, IN}
+      {Higher Secondary Certificate;  Grades: 64\%}{July 2016 - May 2018}
+      \resumeSubheading
+      {Sheth M.A. High School}{Mumbai, MH, IN}
+      {Secondary School Certificate;  Grades: 85\%}{May 2016}
+  \resumeSubHeadingListEnd
+  
+  
+ %-----------PROJECTS-----------
+\section{Projects}
+\vspace{-10pt}
+    \resumeProjectSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/noor12401/Projects/tree/main/AQI}{\color{blue}\textbf{Air Quality Index Prediction}} $|$ \emph{Python, Streamlit, ML, Matplotlib, EDA}}{September 2021}
+          \resumeItemListStart
+          \resumeProjectItem {Developed a Machine Learning Model to predict quality of air using algorithms including Linear Regression, Lasso Regression, Decision Tree, XGBoost, Random Forest Regressor which is deployed on \textbf{\href{https://airqualityindexcheckerr.herokuapp.com/}{\color{blue}Heroku}}.}
+          \resumeProjectItem{Built the \textbf{Explore} page for the users to visualize different graphs to understand the relationship between parameters.}
+          \resumeItemListEnd
+          \vspace{-24pt}
+          \resumeProjectSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/noor12401/VirtualHealth}{\color{blue}\textbf{Virtual Health CheckUp}} $|$ \emph{Python, PyWebIo, Heroku Cloud}}{April 2021}
+          \resumeItemListStart
+          \resumeProjectItem {Developed a python script to provide the basic details such as BMI, BMR, Diabetes Prediction, Average Protein, and Fats Intake, Fitness Score using common details such as Body Temperature, Age, Height, Weight, etc.}
+          \resumeItemListEnd
+          \vspace{-12pt}
+          \resumeProjectSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/noor12401/COVID-19-Analysis}{\color{blue}\textbf{COVID-19 Analysis}} $|$ \emph{Python, NumPy, Pandas, Matplotlib}}{July 2020}
+          \resumeItemListStart
+          \resumeProjectItem {Used \textbf{Linear Regression} to analyze the relationship between Confirmed Cases and Life Factors (like Social Support, Life Expectancy, Countries with GDP per Capita, etc.) and the relationship between Deaths Rates and Life Factors.}
+          \resumeItemListEnd
+    \resumeProjectSubHeadingListEnd
+    \vspace{-15pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+    \resumeItemListStart
+    \item Recipient of AWS Machine Learning Scholarship offered by AWS and Udacity (out of 18,000+ applications from 149 countries).
+    \vspace{-5pt}
+    \item Recipient of COL-Udemy Skills for Work Scholarship offered by Commonwealth of Learning's Skills & P N Panicker Foundation
+    \vspace{-5pt}
+    \item Cleared Python Level 1 Qualification conducted by Cambridge Certification Authority
+    \resumeItemListEnd
+    \vspace{-12pt}
+
+%-----------CERTIFICATIONS-----------------
+\section{Certifications}
+  \resumeItemListStart
+  \item \textbf{\href{https://www.coursera.org/account/accomplishments/professional-cert/HHSB8SHSDDBN}{\color{blue}IBM Data Science Professional Certificate}}
+  \hfill
+  \textbf{IBM, Coursera}
+  \vspace{-8pt}
+  \item \textbf{\href{https://www.credential.net/5794018e-8523-428f-8f57-6b862a786523#gs.bf0vw7}{\color{blue}Machine Learning Concepts}}
+  \hfill
+  \textbf{UpGrad}
+  \vspace{-8pt}
+  \item \textbf{\href{https://leapsdata.analyttica.com/certificates/b53ad4c9-776c-43c5-ab8c-6c7edeaa7257/certificate_LEAPSCE00001915.png}{\color{blue}Fundamentals of Data Analytics}}
+  \hfill
+  \textbf{Analyttica TreasureHunt}
+  \vspace{-8pt}
+  \item \textbf{\href{https://courses.packtpub.com/certificates/kljy0gexga}{\color{blue}Python Workshop}}
+  \hfill
+  \textbf{Packt}
+  
+  \resumeItemListEnd
+  \vspace{-12pt}
+
+%
+%--------SKILLS------------
+\section{Skills}
+    \resumeItemListStart
+    \item \textbf{Tools/Frameworks}{: Pandas, NumPy, Scikit-learn, OpenCV, Jupyter notebook, Flask, Git}
+    \vspace{-8pt}
+    \item \textbf{Languages}{: Python, SQL, C, MATLAB, HTML, CSS, \LaTeX}
+    \vspace{-8pt}
+    \item \textbf{Interests}{: Machine Learning, Data Structures and Algorithms, Deep Learning, Data Science, Blockchain}
+    
+    \resumeItemListEnd
+ 
+%-------------------------------------------
+%   \item{
+%     \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%     \hfill
+%     \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%   }
+ \resumeSubHeadingListEnd
+%-------------------------------------------
+%-------------------------------------------
+\end{document}
